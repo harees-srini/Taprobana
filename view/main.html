@@ -3,10 +3,78 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="/scripts/scripts.js"></script>
+        <style></style>
     </head>
     <body>
-        <h1>Welcome to the Pearl of the Indian Ocean</h1>
+        <div class="navbar">
+            <span class="navlinks">
+                <a class="active-panel" href="#Home">Home</a>
+                <a href="#Home">About</a>
+                <a href="#Home">Testimonials</a>
+                <a href="#Home">Destinations</a>
+                <a href="#Home">Contact Us</a>
+            </span>
+        </div>    
+        <section class="carouselContainer">            
+            <div class="carousel">
+                <div class="slideText">Welcome to this part of the Indian Ocean</div>
+                <button type="button" class="tourbutton">Book a tour</button>
+                <div class="mySlides fade">
+                    <img src="/images/sigiriya-459197_1920.jpg" style="width:100%">                
+                </div>
+                <div class="mySlides fade">
+                    <img src="/images/elephants-2131326_1920.jpg" style="width:100%">                
+                </div>
+                <div class="mySlides fade">
+                    <img src="/images/stupa-5327512_1920.jpg" style="width:100%">                
+                </div>
+            </div>
+        </section>    
+        <section class="aboutContainer">
+            <div class="about">
+                <h2>Why you should visit Sri Lanka</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="aboutImage">
+                    <img src="/images/buddha-1024347_640.jpg">
+                </div>
+            </div>        
+        </section>
+        <section class="testmonialsection">
+            <div class="testimonialContainer">
+                <h2>What people say</h2>
+            </div>
+        </section>
+        <section class="Destinations">
+            <div class="destinationContainer">
+                <h2>Where you should visit</h2>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contactContainer">
+                <h2>Contact Us</h2>
+            </div>
+        </section>
+        <footer>
+            <p>Author: Harees Srinivasan</p>
+            <p><a href="mailto:harees1103@gmail.com">harees1103@gmail.com</a></p>
+        </footer>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
     </body>    
 </html>
