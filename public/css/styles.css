@@ -54,7 +54,7 @@ a{
     position:absolute;
     padding: 10px 15px 10px 15px;
     text-align: center;
-    top: 60%;
+    top: 65%;
     left: 45%;
 }
 
@@ -75,21 +75,236 @@ a{
 }
 
 
-.aboutContainer{
+.about{
     color: white;
+	height: 100px;
 }
 
+.about h2{
+	position: relative;
+	left: 300px;
+}
 .about p{
-    width: 50%;
-    font-size: 30px;
+    width: 30%;
+	height: fit-content;
+    font-size: 20px;
+	position: relative;
+	left: 300px;
 }
 
 .aboutImage{
     position: relative;    
-    bottom: 400px;
-    left: 60%;
+    bottom: 290px;
+	left: 900px;
+    /*float: right;*/
+    right: 0px;
+    width: fit-content;
 }
 
-footer{
-    background-color: #005;
+.footer{
+	position: relative;
+	top: 200px;
+	width: fit-content;
+	height: auto;
+	padding: 50px 80px;
+	background: black;
+}
+
+.footer .aboutus{
+	width: 40%;
+	float: left;
+}
+.footer .container  h2{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.footer .container  h2:before{
+	content:'';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #f00;
+}
+.footer  p{
+	color: #999;
+}
+
+.social{
+	margin-top: 20px;
+	display: flex;
+}
+.social li{
+	list-style: none;
+}
+.social li a{
+	display: inline-block;
+	height: 40px;
+	display: flex;
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+.quicklinks{
+	position: relative;
+	left: 50px;
+	float: right;
+	width: fit-content;
+}
+.quicklinks ul li{
+	list-style: none;
+}
+.quicklinks ul li a{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quicklinks ul li a:hover{
+	color: white;
+	transition: .3s  ease;
+}
+.contactinfo{
+	float: right;
+	position: relative;
+	left: 800px;
+	width: fit-content;
+}
+
+.contactinfo.info li{
+	display: flex;
+	margin-bottom: 16px;
+}
+.contactinfo.info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contactinfo.info li span{
+	color: #999;
+}
+.contactinfo.info li a{
+	color: #999;
+	text-decoration: none;
+}
+.contactinfo.info li a:hover{
+	color: #fff;
+}
+.info{
+	color: #999;
+}
+.copyright{
+    position: relative;
+    top: 230px;
+	left: 200px;
+	width: fit-content;
+	padding: 8px 100px;
+	text-align: center;
+	color: #999;
+}
+@media screen and (max-width:992px){
+    
+    .aboutus, .contactinfo{
+        width: 35%;
+    }
+    .quicklinks{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .aboutus, .contactinfo, .quicklinks{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}   
+
+.review1{
+	float: left;	
+	width:200px;
+	height:200px;
+	margin: 10px;
+	background-color:white;
+	border:solid black;
+}
+
+.review2{
+	margin: 10px;
+	float: left;	
+	width:200px;
+	height:200px;
+	background-color:white;
+	border:solid black;
+}
+
+.review3{
+	float: left;
+	margin: 10px;	
+	width:200px;
+	height:200px;
+	background-color:white;
+	border:solid black;
+}
+
+.testimonialContainer{
+	position: relative;
+	top: 250px;
+	left: 500px;
+	text-align: center;
+	display: inline-block;
+}
+
+.testimonialContainer h2{
+	color:white;	
+}
+
+.destinationContainer{
+	position: relative;
+	top: 250px;
+	left: 500px;
+	text-align: center;
+	display: inline-block;
+	color: white;
+}
+
+.dest1 {
+	float: left;
+	width:200px;
+	height:200px;
+	margin: 10px;
+	background-color:white;
+	border:solid black;
+}
+
+.dest2{
+	float: left;
+	width:200px;
+	height:200px;
+	margin: 10px;
+	background-color:white;
+	border:solid black;
+}
+
+.dest3{
+	float: left;
+	width:200px;
+	height:200px;
+	margin: 10px;
+	background-color:white;
+	border:solid black;
+}
+
+.contactContainer{
+	position: relative;
+	top: 300px;
+	left: 100px;
+	color: white;
+	text-align: center;
+
 }

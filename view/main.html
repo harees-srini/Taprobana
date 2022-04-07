@@ -5,61 +5,126 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/styles.css">
         <script src="/scripts/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
         <style></style>
     </head>
     <body>
         <div class="navbar">
             <span class="navlinks">
                 <a class="active-panel" href="#Home">Home</a>
-                <a href="#Home">About</a>
-                <a href="#Home">Testimonials</a>
-                <a href="#Home">Destinations</a>
-                <a href="#Home">Contact Us</a>
+                <a href="#aboutContainer">About</a>
+                <a href="#testmonialsection">Testimonials</a>
+                <a href="#Destinations">Destinations</a>
+                <a href="#contact">Contact Us</a>
             </span>
         </div>    
-        <section class="carouselContainer">            
-            <div class="carousel">
+        <section class="carouselContainer">
+            <div class="carousel" id="carousel">
                 <div class="slideText">Welcome to this part of the Indian Ocean</div>
                 <button type="button" class="tourbutton">Book a tour</button>
                 <div class="mySlides fade">
-                    <img src="/images/sigiriya-459197_1920.jpg" style="width:100%">                
+                    <img src="/images/sigiriya-459197_1920.jpg" style="width:100%; height: 700px;">
                 </div>
                 <div class="mySlides fade">
-                    <img src="/images/elephants-2131326_1920.jpg" style="width:100%">                
+                    <img src="/images/elephants-2131326_1920.jpg" style="width:100%; height: 700px;">
                 </div>
                 <div class="mySlides fade">
-                    <img src="/images/stupa-5327512_1920.jpg" style="width:100%">                
+                    <img src="/images/stupa-5327512_1920.jpg" style="width:100%; height: 700px;">
                 </div>
             </div>
         </section>    
-        <section class="aboutContainer">
+        <section class="aboutContainer" id="aboutContainer">
             <div class="about">
                 <h2>Why you should visit Sri Lanka</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <div class="aboutImage">
-                    <img src="/images/buddha-1024347_640.jpg">
+                    <img src="/images/buddha-1024347_640.jpg" height="300px">
                 </div>
             </div>        
         </section>
-        <section class="testmonialsection">
+        <section class="testmonialsection" id="testmonialsection">
             <div class="testimonialContainer">
                 <h2>What people say</h2>
+                <div class="review1">"Sri Lanka is by far has the most beautiful locations in Asia. Visit it once, you'll want to visit it again."</div>
+                <div class="review2">"Sri Lanka is by far has the most beautiful locations in Asia. Visit it once, you'll want to visit it again."</div>    
+                <div class="review3">"Sri Lanka is by far has the most beautiful locations in Asia. Visit it once, you'll want to visit it again."</div>
             </div>
         </section>
-        <section class="Destinations">
+        <section class="Destinations" id="Destinations">
             <div class="destinationContainer">
                 <h2>Where you should visit</h2>
+                <div class="dest1"><img src="/images/galle-5115527_640.jpg" alt="" width="200" height="200"></div>
+                <div class="dest2"><img src="/images/sigiriya-2516894_640.jpg" alt="" width="200" height="200"></div>
+                <div class="dest3"><img src="/images/stupa-5327512_1920.jpg" alt="" width="200" height="200"></div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contactContainer">
                 <h2>Contact Us</h2>
+                <p>Send us your details so we can assign an agent to contact you</p>
+                <form method="post">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email here">
+                    <label for="text">Query</label>
+                    <input type="text" name="text" id="text" placeholder="Enter your query here">
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </section>
-        <footer>
-            <p>Author: Harees Srinivasan</p>
-            <p><a href="mailto:harees1103@gmail.com">harees1103@gmail.com</a></p>
-        </footer>
+        <!-- <footer class= "footer">
+            <div class="container">
+                <div class="sec aboutus">
+                <h2>TAPROBANA</h2>
+                    <p>Find tour destinations in the most beatiful island on the Indian Ocean.</p>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"> </i></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"> </i></a></li>
+                    <li><a href="https://lk.linkedin.com//"><i class="fa fa-linkedin" aria-hidden="true"> </i></a></li>
+                </ul>
+                <br>
+                <br>
+                    <p>Page Editor - <a href="Student_4.html"><span id= "pgeditor">Harees Srinivasan</span></a></p>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Destinations</a></li>
+                        <li><a href="">Contact Us</a></li>                        
+                    </ul>
+                </div>
+                    <div class="sec contactinfo">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span>132 Galle Road<br>
+                            Colombo, 00600,<br>Sri Lanka</span>
+                            <br><br>
+                        </li>
+                        
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:+94178956432">+94 885 333 33</a><br>
+                                <a href="tel:+94178956432">+94 884 333 33</a></p>
+                                <br><br>
+                        </li>
+                        
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:inspiringarts@arts.ac.lk">taprobana@tours.lk</a></p>
+                        </li>
+                    </ul>
+                    </div>      
+            </div>
+            <div class="copyright">
+                <p>Copyright @ 2022 Taprobana. All Rights Reserved</p>
+            </div>
+            </footer> -->
         <script>
             let slideIndex = 0;
             showSlides();
